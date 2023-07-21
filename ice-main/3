@@ -8,8 +8,3 @@ sed -i 's/GRUB_CMDLINE_LINUX_DEFAULT="/& nvidia-drm.modeset=1 /' /etc/default/gr
 update-grub
 
 
-
-sed -i "s/Exec=/&env WLR_NO_HARDWARE_CURSORS=1 /" /usr/share/wayland-sessions/hyprland.desktop
-
-
-
