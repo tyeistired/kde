@@ -1,0 +1,15 @@
+#!/bin/bash
+
+pacman -S yay --noconfirm
+yay -Syu 
+yay 
+yay -S update-grub ly xterm hyprland-nvidia foot icewm terminator dmenu midori qtfm leafpad qt6-wayland qt5-wayland wofi feh noto-fonts pavucontrol p7zip-gui xarchiver opencl-nvidia unrar p7zip xdg-desktop-portal-hyprland nohang --noconfirm
+yay -S nvidia-tweaks --noconfirm
+yay -S wd719x-firmware ast-firmware upd72020x-fw aic94xx-firmware --noconfirm
+yay -S linux-firmware-bnx2x linux-firmware-liquidio linux-firmware-marvell linux-firmware-mellanox linux-firmware-nfp linux-firmware-qcom linux-firmware-qlogic linux-firmware-whence --noconfirm
+yay -S pa-applet-git --noconfirm
+yay -S polkit-dumb-agent-git
+
+yay --save --devel
+
+mkinitcpio -P
