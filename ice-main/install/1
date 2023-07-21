@@ -14,7 +14,7 @@ pacstrap /mnt base linux linux-firmware base-devel git nano wget dhcpcd
 
 genfstab -U /mnt >> /mnt/etc/fstab
 
-git clone https://github.com/tyeistired/ice.git /mnt/ice/
+git clone https://github.com/tyeistired/kde.git /mnt/kde/
 
 arch-chroot /mnt
 
