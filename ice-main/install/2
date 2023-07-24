@@ -18,8 +18,8 @@ grub-mkconfig -o /boot/grub/grub.cfg
 
 mkinitcpio -P
 
-pacman -S sudo dhcpcd
+pacman -S sudo networkmanager
 
 
-systemctl enable dhcpcd
+systemctl enable NetworkManager
 
