@@ -10,7 +10,7 @@ mkdir -p /mnt/boot/efi
 
 mount /dev/sd#1 /mnt/boot/efi
 
-pacstrap /mnt base linux linux-firmware base-devel git nano wget dhcpcd
+pacstrap /mnt base linux linux-firmware base-devel git nano wget networkmanager
 
 genfstab -U /mnt >> /mnt/etc/fstab
 
